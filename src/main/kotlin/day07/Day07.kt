@@ -1,7 +1,7 @@
 import kotlin.math.abs
 
 fun main() {
-    val crabPositions = readInput("Day07_test")[0].split(',').map { it.toInt() }
+    val crabPositions = readInput("day07/Day07_test")[0].split(',').map { it.toInt() }
 
     fun calculateMinimumFuelConsumption(fuelConsumptionCalculation: (crabPosition: Int, targetPosition: Int) -> Int) =
         (0..crabPositions.maxOf { it })
